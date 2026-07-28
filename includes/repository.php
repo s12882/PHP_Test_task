@@ -1,9 +1,11 @@
 <?php
 
+// Optimized by Claude code
 const ARTICLE_SORT_FIELDS = [
     'date' => 'a.created_at',
     'views' => 'a.views',
 ];
+// End Claude code
 
 /**
  * Fetch all categories
