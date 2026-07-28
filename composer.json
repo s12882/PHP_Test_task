@@ -1,0 +1,6 @@
+{
+    "require": {
+        "smarty/smarty": "^5.8",
+        "ext-pdo": "*"
+    }
+}
