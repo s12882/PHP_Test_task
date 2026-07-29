@@ -7,6 +7,7 @@ require __DIR__ . '/includes/repository.php';
 use Smarty\Smarty;
 
 $smarty = new Smarty();
+$pdo = getDbConnection();
 
 $smarty->setTemplateDir(__DIR__ . '/templates/');
 
@@ -14,8 +15,6 @@ $smarty->setTemplateDir(__DIR__ . '/templates/');
 $smarty->setCompileDir(__DIR__ . '/templates_c/');
 $smarty->setCacheDir(__DIR__ . '/cache/');
 // End Claude code
-
-$pdo = getDbConnection();
 
 $smarty->assign('nav_categories', getCategories($pdo));
 $smarty->assign('current_year', date('Y'));
